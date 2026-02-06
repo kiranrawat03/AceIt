@@ -1,0 +1,112 @@
+:root {
+    /* Core Palette */
+    --color-primary: #6366F1;
+    /* Deep Indigo */
+    --color-primary-hover: #4F46E5;
+    --color-accent: #10B981;
+    /* Emerald Action */
+    --color-accent-hover: #059669;
+
+    /* Neutrals */
+    --color-bg-app: #F8FAFC;
+    /* Slate 50 */
+    --color-bg-surface: #FFFFFF;
+    --color-text-main: #1E293B;
+    /* Slate 800 */
+    --color-text-dim: #64748B;
+    /* Slate 500 */
+    --color-border: #E2E8F0;
+
+    /* Interface */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--color-bg-app);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar Polish */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}
+
+/* App Layout Grid */
+.app-layout {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    min-width: 0;
+    /* Prevent flex overflow */
+}
+
+.chat-area {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+@media (min-width: 768px) {
+    .backdrop {
+        display: none;
+    }
+}
+
+/* Dark Mode Overrides */
+[data-theme='dark'] {
+    --color-bg-app: #0F172A;
+    /* Slate 900 */
+    --color-bg-surface: #1E293B;
+    /* Slate 800 */
+    --color-text-main: #F8FAFC;
+    /* Slate 50 */
+    --color-text-dim: #94A3B8;
+    /* Slate 400 */
+    --color-border: #334155;
+    /* Slate 700 */
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+}

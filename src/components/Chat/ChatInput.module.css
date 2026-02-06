@@ -1,0 +1,57 @@
+.inputContainer {
+    padding: 1rem;
+    background-color: var(--color-bg-surface);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    gap: 0.75rem;
+    align-items: flex-end;
+}
+
+.textarea {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    resize: none;
+    background-color: var(--color-bg-app);
+    color: var(--color-text-main);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    max-height: 120px;
+    min-height: 50px;
+}
+
+.textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.sendButton {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.sendButton:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+}
+
+.sendButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

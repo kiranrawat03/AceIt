@@ -1,0 +1,127 @@
+[
+    {
+        "id": "frontend-dev",
+        "title": "Frontend Developer",
+        "role": "Frontend Engineer",
+        "description": "Technical interview focusing on React, CSS, and Performance.",
+        "initialMessage": "Hello! I'm Ace, your interview coach. Let's start with a classic: **Explain the difference between `useEffect` and `useLayoutEffect`.**",
+        "keywords": [
+            "paint",
+            "render",
+            "blocked",
+            "dom",
+            "synchronous",
+            "asynchronous"
+        ],
+        "hints": [
+            "Effect timing vs. browser paint",
+            "Synchronous vs. Asynchronous",
+            "Blocking the DOM"
+        ]
+    },
+    {
+        "id": "behavioral-star",
+        "title": "Behavioral (STAR)",
+        "role": "General",
+        "description": "Practice behavioral questions using the STAR method.",
+        "initialMessage": "Hi there. I'm ready to help you refine your behavioral stories. Tell me about a time you had to **manage a conflicting priority** with a coworker.",
+        "keywords": [
+            "situation",
+            "task",
+            "action",
+            "result",
+            "communication",
+            "compromise"
+        ],
+        "hints": [
+            "Start with the Context (Situation)",
+            "What was YOUR specific role? (Task)",
+            "Focus on the Action you took",
+            "End with a measurable Result"
+        ]
+    },
+    {
+        "id": "pm-product-sense",
+        "title": "Product Manager",
+        "role": "Product Manager",
+        "description": "Product sense and strategy questions.",
+        "initialMessage": "Welcome. Let's dig into your product instincts. **How would you improve Spotify's discovery features?**",
+        "keywords": [
+            "user",
+            "metrics",
+            "engagement",
+            "retention",
+            "features",
+            "pain points"
+        ],
+        "hints": [
+            "Identify the User Segment",
+            "Define the Goal (Retention/Engagement?)",
+            "Pain Points in current flow",
+            "Brainstorm Solutions"
+        ]
+    },
+    {
+        "id": "backend-dev",
+        "title": "Backend Engineer",
+        "role": "Backend Developer",
+        "description": "API design, databases, and server-side logic.",
+        "initialMessage": "Let's talk scale. **How would you design a rate-limiting system for a high-traffic API?**",
+        "keywords": [
+            "redis",
+            "token bucket",
+            "middleware",
+            "scalability",
+            "distributed",
+            "latency"
+        ],
+        "hints": [
+            "Storage (Redis vs In-memory)",
+            "Algorithm (Token Bucket/Leaky Bucket)",
+            "Distributed race conditions",
+            "Handling 429 Too Many Requests"
+        ]
+    },
+    {
+        "id": "system-design",
+        "title": "System Design",
+        "role": "Architect",
+        "description": "High-level architecture and scalability questions.",
+        "initialMessage": "Welcome, Architect. **Design a URL shortening service like Bit.ly.**",
+        "keywords": [
+            "hashing",
+            "collision",
+            "database",
+            "redirect",
+            "cache",
+            "scale"
+        ],
+        "hints": [
+            "Functional vs Non-Functional Requirements",
+            "API Endpoint Design",
+            "Database Schema (SQL vs NoSQL)",
+            "The Hashing Algorithm (Base62?)"
+        ]
+    },
+    {
+        "id": "marketing-manager",
+        "title": "Marketing Manager",
+        "role": "Marketing",
+        "description": "Campaign strategy and brand growth.",
+        "initialMessage": "Let's switch gears. **We're launching a new fitness app. Walk me through your Go-To-Market strategy.**",
+        "keywords": [
+            "audience",
+            "channels",
+            "budget",
+            "kpis",
+            "positioning",
+            "launch"
+        ],
+        "hints": [
+            "Target Persona Definition",
+            "Value Proposition",
+            "Channels (Paid, Organic, Influencer)",
+            "Success Metrics (CAC, LTV)"
+        ]
+    }
+]

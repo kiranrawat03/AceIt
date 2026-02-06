@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    /* max-width matches input max-width roughly */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconWrapper {
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+}
+
+.chips {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    /* Scrollbar spacing */
+}
+
+/* Hide scrollbar for cleaner look */
+.chips::-webkit-scrollbar {
+    height: 0px;
+    background: transparent;
+}
+
+.chip {
+    white-space: nowrap;
+    background-color: white;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-dim);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.chip:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    background-color: #EEF2FF;
+}
+
+[data-theme='dark'] .chip {
+    background-color: var(--color-bg-surface);
+}

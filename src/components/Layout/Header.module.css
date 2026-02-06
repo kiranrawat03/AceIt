@@ -1,0 +1,61 @@
+.header {
+    height: 64px;
+    background-color: var(--color-bg-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    gap: 1rem;
+}
+
+.menuBtn {
+    display: none;
+    color: var(--color-text-dim);
+}
+
+@media (max-width: 767px) {
+    .menuBtn {
+        display: block;
+    }
+}
+
+.titleContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-text-main);
+}
+
+.badge {
+    background-color: #ECFDF5;
+    color: var(--color-accent-hover);
+    padding: 0.25rem 0.625rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actionBtn {
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    color: var(--color-text-dim);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.actionBtn:hover {
+    background-color: var(--color-bg-app);
+    color: var(--color-primary);
+}

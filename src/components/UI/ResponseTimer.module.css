@@ -1,0 +1,44 @@
+.timer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--color-bg-app);
+    color: var(--color-text-dim);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.timer.active {
+    background-color: #FEF2F2;
+    /* Red 50 */
+    color: #DC2626;
+    /* Red 600 */
+    border-color: #FECACA;
+    /* Red 200 */
+    animation: pulse 2s infinite;
+}
+
+[data-theme='dark'] .timer.active {
+    background-color: rgba(220, 38, 38, 0.1);
+    color: #F87171;
+    /* Red 400 */
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
